@@ -206,13 +206,13 @@
         if($HeroVegasSlider.length > 0){
 	    $('#hero_vegas_slider').vegas({
 		    slides: [{
-		        src: "assets/img/vegas1.jpg"
+		        src: "assets/img/home-hero-01.jpg"
 		    }, {
-		        src: "assets/img/vegas3.jpg"
+		        src: "assets/img/hero-banner.jpg"
 		    }, {
-		        src: "assets/img/vegas2.jpg"
+		        src: "assets/img/image-2.jpg"
 		    }, {
-		        src: "assets/img/vegas4.jpg"
+		        src: "assets/img/image-3.jpg"
 		    }],
 		    overlay: true,
 		    transition: 'fade2',
