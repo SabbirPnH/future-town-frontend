@@ -302,13 +302,53 @@
 					<div class="my-account-main-content">
 						<div class="tab-content" id="myTabContent">
 						  	<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-						  		<div class="my-account-main-content-item">
-						  			<h2>Dashboard</h2>
-						  			<p>From your account dashboard you can view your recent orders, manage your shipping and billing addresses, and edit your password and account details.</p>
-						  		</div>
+								<div class="my-account-main-content-item">
+									<h2>Dashboard</h2>
+									<p>From your account dashboard, you can view your recent orders, manage your shipping and billing addresses, and edit your password and account details.</p>
+							
+									<!-- Balance Section -->
+									<div class="balance-section my-4 p-4 border rounded shadow-sm">
+										<h3>Your Balance</h3>
+										<p class="balance-amount text-success">$100.00</p> <!-- Replace with dynamic value -->
+									</div>
+							
+									<!-- Referral Section -->
+									<div class="referral-section my-4 p-4 border rounded shadow-sm">
+										<h3>Referral Name</h3>
+										<p class="referral-name">John Doe</p> <!-- Replace with dynamic value -->
+									</div>
+								</div>
 						  	</div>
-							  <div class="tab-pane fade" id="poperty" role="tabpanel" aria-labelledby="poperty-tab">
-
+							<div class="tab-pane fade" id="poperty" role="tabpanel" aria-labelledby="poperty-tab">
+								<div class="my-account-main-content-item">
+									<h2 class="text-2xl font-bold">Your Purchased Properties</h2>
+									
+									<!-- Property List -->
+									<div class="property-list mt-4">
+										<div class="property-item p-4 mb-4 border rounded shadow-sm">
+											<h3 class="text-lg font-semibold">Beautiful Beach House</h3>
+											<p class="text-gray-600">A stunning beach house located in Malibu, California.</p>
+											<p class="text-sm text-gray-500">Price: $1,200,000</p>
+											<p class="text-sm text-gray-500">Purchased on: January 15, 2023</p>
+										</div>
+							
+										<div class="property-item p-4 mb-4 border rounded shadow-sm">
+											<h3 class="text-lg font-semibold">City Apartment</h3>
+											<p class="text-gray-600">A modern apartment in downtown New York City.</p>
+											<p class="text-sm text-gray-500">Price: $800,000</p>
+											<p class="text-sm text-gray-500">Purchased on: March 10, 2023</p>
+										</div>
+							
+										<div class="property-item p-4 mb-4 border rounded shadow-sm">
+											<h3 class="text-lg font-semibold">Countryside Cottage</h3>
+											<p class="text-gray-600">A charming cottage in the countryside of Vermont.</p>
+											<p class="text-sm text-gray-500">Price: $450,000</p>
+											<p class="text-sm text-gray-500">Purchased on: June 25, 2023</p>
+										</div>
+							
+										<!-- Add more properties as needed -->
+									</div>
+								</div>
 							</div>
 						  	<div class="tab-pane fade" id="order" role="tabpanel" aria-labelledby="order-tab">
 						  		<div class="my-account-main-content-item">
@@ -390,42 +430,140 @@
 						  		</div>
 						  	</div>
 						  	<div class="tab-pane fade" id="acdetails" role="tabpanel" aria-labelledby="acdetails-tab">
-						  		<div class="my-account-main-content-item">
-						  			<h2>Account details </h2>
-						  			<form action="#">
-						  				<div class="single-field">
-						  					<label>First Name</label>
-						  					<input type="text" name="name" placeholder="First Name">
-						  				</div>
-						  				<div class="single-field">
-						  					<label>Last Name</label>
-						  					<input type="text" name="lname" placeholder="Last Name">
-						  				</div>
-						  				<div class="single-field">
-						  					<label>Address</label>
-						  					<input type="text" name="address" placeholder="Address">
-						  				</div>
-						  				<div class="single-field">
-						  					<label>Email Name</label>
-						  					<input type="text" name="email" placeholder="Email Name">
-						  				</div>
-						  				<div class="single-field">
-						  					<label>Password</label>
-						  					<input type="password" name="password" placeholder="Password">
-						  				</div>
-						  				<div class="single-field">
-						  					<label>Change Password</label>
-						  					<input type="password" name="cpassword" placeholder="Change Password">
-						  				</div>
-						  				<div class="single-field">
-						  					<label>Description</label>
-						  					<textarea name="message" placeholder="Description"></textarea>
-						  				</div>
-						  				<div class="single-field">
-						  					<button class="button-1 border-none" type="submit">Save Now</button>
-						  				</div>
-						  			</form>
-						  		</div>
+								<div class="my-account-main-content-item">
+									<h2>Account Details</h2>
+									<form action="#" class="row">
+										<div class="col-6">
+											<div class="single-field">
+												<label>First Name</label>
+												<input type="text" name="name" class="form-control" placeholder="First Name">
+											</div>
+										</div>
+										<div class="col-6">
+											<div class="single-field">
+												<label>Last Name</label>
+												<input type="text" name="lname" class="form-control" placeholder="Last Name">
+											</div>
+										</div>
+										<div class="col-6">
+											<div class="single-field">
+												<label>Father's Name</label>
+												<input type="text" name="father_name" class="form-control" placeholder="Father's Name">
+											</div>
+										</div>
+										<div class="col-6">
+											<div class="single-field">
+												<label>Spouse's Name</label>
+												<input type="text" name="spouse_name" class="form-control" placeholder="Spouse's Name">
+											</div>
+										</div>
+										<div class="col-6">
+											<div class="single-field">
+												<label>Mother's Name</label>
+												<input type="text" name="mother_name" class="form-control" placeholder="Mother's Name">
+											</div>
+										</div>
+										<div class="col-6">
+											<div class="single-field">
+												<label>House No</label>
+												<input type="text" name="house_no" class="form-control" placeholder="House No">
+											</div>
+										</div>
+										<div class="col-6">
+											<div class="single-field">
+												<label>Location</label>
+												<input type="text" name="location" class="form-control" placeholder="Location">
+											</div>
+										</div>
+										<div class="col-6">
+											<div class="single-field">
+												<label>Ward No</label>
+												<input type="text" name="ward_no" class="form-control" placeholder="Ward No">
+											</div>
+										</div>
+										<div class="col-6">
+											<div class="single-field">
+												<label>P.O</label>
+												<input type="text" name="po" class="form-control" placeholder="P.O">
+											</div>
+										</div>
+										<div class="col-6">
+											<div class="single-field">
+												<label>P.S</label>
+												<input type="text" name="ps" class="form-control" placeholder="P.S">
+											</div>
+										</div>
+										<div class="col-6">
+											<div class="single-field">
+												<label>Mobile (Own)</label>
+												<input type="text" name="mobile_own" class="form-control" placeholder="Mobile (Own)">
+											</div>
+										</div>
+										<div class="col-6">
+											<div class="single-field">
+												<label>Mobile (NOK)</label>
+												<input type="text" name="mobile_nok" class="form-control" placeholder="Mobile (Next of Kin)">
+											</div>
+										</div>
+										<div class="col-6">
+											<div class="single-field">
+												<label>Date of Birth</label>
+												<input type="date" name="dob" class="form-control">
+											</div>
+										</div>
+										<div class="col-6">
+											<div class="single-field">
+												<label>NID No</label>
+												<input type="text" name="nid" class="form-control" placeholder="NID No">
+											</div>
+										</div>
+										<div class="col-6">
+											<div class="single-field">
+												<label>TIN</label>
+												<input type="text" name="tin" class="form-control" placeholder="TIN">
+											</div>
+										</div>
+										<div class="col-6">
+											<div class="single-field">
+												<label>Share Price</label>
+												<input type="text" name="share_price" class="form-control" placeholder="Share Price">
+											</div>
+										</div>
+										<div class="col-6">
+											<div class="single-field">
+												<label>Address</label>
+												<input type="text" name="address" class="form-control" placeholder="Address">
+											</div>
+										</div>
+										<div class="col-6">
+											<div class="single-field">
+												<label>Email</label>
+												<input type="text" name="email" class="form-control" placeholder="Email">
+											</div>
+										</div>
+										<div class="col-6">
+											<div class="single-field">
+												<label>Password</label>
+												<input type="password" name="password" class="form-control" placeholder="Password">
+											</div>
+										</div>
+										<div class="col-6">
+											<div class="single-field">
+												<label>Change Password</label>
+												<input type="password" name="cpassword" class="form-control" placeholder="Change Password">
+											</div>
+										</div>
+										<div class="col-12">
+											<div class="single-field">
+												<label>Description</label>
+												<textarea name="message" class="form-control" placeholder="Description"></textarea>
+											</div>
+										</div>
+										<div class="col-12">
+											<button class="button-1 border-none" type="submit">Save Now</button>
+										</div>
+									</form>
+								</div>
 						  	</div>
 						</div>
 					</div>
@@ -446,11 +584,12 @@
 							<!-- Logo -->
 							<div class="flogo mb-20">
 								<a href="index.html">
-									<img src="assets/img/white-logo.png" alt="logo">
+									<img  src="assets/img/footer.png" alt="logo" style="filter: brightness(0) invert(1);" width="100px">
+
 								</a>
 							</div>
-							<p>Lorem Ipsum is simply dummy text of the and typesetting industry. </p>
-							<p>2512, New Market Eliza Road, Sincher 80 Montreal Central Canada, USA QHVK1254</p>
+							<!-- <p>Lorem Ipsum is simply dummy text of the and typesetting industry. </p> -->
+							<p> Future Town of Bangladesh 3/3B, Solaiman Plaza, Purana Palton, Dhaka-1000</p>
 							<div class="f-social">
 								<span><a href="#"><i class="fab fa-facebook-f"></i></a></span>
 								<span><a href="#"><i class="fab fa-twitter"></i></a></span>
@@ -475,13 +614,12 @@
 					<!-- Single -->
 					<div class="col-lg-3 col-md-6 mb-30">
 						<div class="f-widgets-single">
-							<h2>Category</h2>
+							<h2>Service</h2>
 							<ul>
-								<li><a href="#">Home Selling</a></li>
-								<li><a href="#">Property Management</a></li>
-								<li><a href="#">Interior Design</a></li>
-								<li><a href="#">Build Wardrobes</a></li>
-								<li><a href="#">Floor Coverings</a></li>
+								<li><a href="#">Plot Sealing</a></li>
+								<li><a href="#">Land Management</a></li>
+								<li><a href="#">Share Sealing</a></li>
+								
 							</ul>
 						</div>
 					</div>
@@ -507,7 +645,7 @@
 				<div class="row">
 					<div class="col-12">
 						<div class="copy-text">
-							<p>Copyright © 2021 <a href="#">BHouse</a> Theme by <a href="#">CodexUnicTheme</a></p>
+							<p>Copyright © 2024 <a href="#">Future Town</a> Develop By <a target="_blank" href="https://www.pnhbd.com/">PnH IT Solution</a></p>
 						</div>
 					</div>
 				</div>
