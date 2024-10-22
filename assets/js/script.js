@@ -206,9 +206,9 @@
         if($HeroVegasSlider.length > 0){
 	    $('#hero_vegas_slider').vegas({
 		    slides: [{
-		        src: "assets/img/home-hero-01.jpg"
+		        src: "assets/img/1425_sqft_3_beds_ready_apartmentflats_fo-1521950089-770-e.jpg"
 		    }, {
-		        src: "assets/img/hero-banner.jpg"
+		        src: "assets/img/Front-1-1.png"
 		    }, {
 		        src: "assets/img/image-2.jpg"
 		    }, {
